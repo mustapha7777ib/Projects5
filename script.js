@@ -1,8 +1,8 @@
 var images = document.querySelectorAll('.a1 img');
 
-images.forEach(function(image) {
-    image.addEventListener('click', display);
-});
+for (let i = 0; i < images.length; i++) {
+    images[i].addEventListener('click', display);
+}
 
 function display(event) {
     var extendsDiv = event.target.parentElement.nextElementSibling; 
